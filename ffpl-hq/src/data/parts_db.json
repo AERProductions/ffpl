@@ -1,0 +1,1550 @@
+{
+  "0": {
+    "id": 0,
+    "name": "CR-H69S"
+  },
+  "1": {
+    "id": 1,
+    "name": "H07-CRICKET"
+  },
+  "2": {
+    "id": 2,
+    "name": "H04-CICADA"
+  },
+  "3": {
+    "id": 3,
+    "name": "H01-WASP"
+  },
+  "4": {
+    "id": 4,
+    "name": "H02-WASP2"
+  },
+  "5": {
+    "id": 5,
+    "name": "CR-H72S3"
+  },
+  "6": {
+    "id": 6,
+    "name": "CR-H73E"
+  },
+  "7": {
+    "id": 7,
+    "name": "CR-H84E2"
+  },
+  "8": {
+    "id": 8,
+    "name": "CR-H97XS-EYE"
+  },
+  "9": {
+    "id": 9,
+    "name": "H03-BEETLE"
+  },
+  "10": {
+    "id": 10,
+    "name": "H09-SPIDER"
+  },
+  "11": {
+    "id": 11,
+    "name": "CR-H95EE"
+  },
+  "12": {
+    "id": 12,
+    "name": "H10-CICADA2"
+  },
+  "13": {
+    "id": 13,
+    "name": "H05-HORNET"
+  },
+  "14": {
+    "id": 14,
+    "name": "CR-H98XS-EYE2"
+  },
+  "15": {
+    "id": 15,
+    "name": "CR-H81S4"
+  },
+  "16": {
+    "id": 16,
+    "name": "YH08-MANTIS"
+  },
+  "17": {
+    "id": 17,
+    "name": "H11-QUEEN"
+  },
+  "18": {
+    "id": 18,
+    "name": "CR-YH70S2"
+  },
+  "19": {
+    "id": 19,
+    "name": "YH06-LADYB"
+  },
+  "20": {
+    "id": 20,
+    "name": "CR-YH85SR"
+  },
+  "21": {
+    "id": 21,
+    "name": "CR-C75U2"
+  },
+  "22": {
+    "id": 22,
+    "name": "C01-GAEA"
+  },
+  "23": {
+    "id": 23,
+    "name": "CR-C84O"
+  },
+  "24": {
+    "id": 24,
+    "name": "C02-URANUS"
+  },
+  "25": {
+    "id": 25,
+    "name": "CR-C77O"
+  },
+  "26": {
+    "id": 26,
+    "name": "C05-SELENA"
+  },
+  "27": {
+    "id": 27,
+    "name": "C03-HELIOS"
+  },
+  "28": {
+    "id": 28,
+    "name": "C04-ATLAS"
+  },
+  "29": {
+    "id": 29,
+    "name": "CR-C83UA"
+  },
+  "30": {
+    "id": 30,
+    "name": "CR-C98E2"
+  },
+  "31": {
+    "id": 31,
+    "name": "CR-C89E"
+  },
+  "32": {
+    "id": 32,
+    "name": "C06-EOS"
+  },
+  "33": {
+    "id": 33,
+    "name": "YC07-CRONUS"
+  },
+  "34": {
+    "id": 34,
+    "name": "CR-C90U3"
+  },
+  "35": {
+    "id": 35,
+    "name": "CR-C69U"
+  },
+  "36": {
+    "id": 36,
+    "name": "CR-A69S"
+  },
+  "37": {
+    "id": 37,
+    "name": "CR-A71S2"
+  },
+  "38": {
+    "id": 38,
+    "name": "A03-GIBBON"
+  },
+  "39": {
+    "id": 39,
+    "name": "A01-GALAGO"
+  },
+  "40": {
+    "id": 40,
+    "name": "CR-A72F"
+  },
+  "41": {
+    "id": 41,
+    "name": "CR-A88FG"
+  },
+  "42": {
+    "id": 42,
+    "name": "A06-GIBBON2"
+  },
+  "43": {
+    "id": 43,
+    "name": "A05-LANGUR"
+  },
+  "44": {
+    "id": 44,
+    "name": "CR-A82SL"
+  },
+  "45": {
+    "id": 45,
+    "name": "CR-A89AG"
+  },
+  "46": {
+    "id": 46,
+    "name": "A04-BABOON"
+  },
+  "47": {
+    "id": 47,
+    "name": "CR-A75A"
+  },
+  "48": {
+    "id": 48,
+    "name": "A02-DRILL"
+  },
+  "49": {
+    "id": 49,
+    "name": "CR-WA69MG"
+  },
+  "50": {
+    "id": 50,
+    "name": "CR-WA69MS"
+  },
+  "51": {
+    "id": 51,
+    "name": "WA03-TAURUS"
+  },
+  "52": {
+    "id": 52,
+    "name": "CR-WA77MS"
+  },
+  "53": {
+    "id": 53,
+    "name": "CR-WA69BZ"
+  },
+  "54": {
+    "id": 54,
+    "name": "CR-WA74GR"
+  },
+  "55": {
+    "id": 55,
+    "name": "WA01-LEO"
+  },
+  "56": {
+    "id": 56,
+    "name": "WA04-ARIES"
+  },
+  "57": {
+    "id": 57,
+    "name": "A11-MACAQUE"
+  },
+  "58": {
+    "id": 58,
+    "name": "CR-A94FL"
+  },
+  "59": {
+    "id": 59,
+    "name": "CR-A92XS"
+  },
+  "60": {
+    "id": 60,
+    "name": "CR-A80S3"
+  },
+  "61": {
+    "id": 61,
+    "name": "A09-LEMUR2"
+  },
+  "62": {
+    "id": 62,
+    "name": "A07-LEMUR"
+  },
+  "63": {
+    "id": 63,
+    "name": "CR-A98A2"
+  },
+  "64": {
+    "id": 64,
+    "name": "A08-DRILL2"
+  },
+  "65": {
+    "id": 65,
+    "name": "WA02-CETUS"
+  },
+  "66": {
+    "id": 66,
+    "name": "WA05-LUPUS"
+  },
+  "67": {
+    "id": 67,
+    "name": "CR-WA74BZL"
+  },
+  "68": {
+    "id": 68,
+    "name": "CR-WA75MSP"
+  },
+  "69": {
+    "id": 69,
+    "name": "CR-WA78GRL"
+  },
+  "70": {
+    "id": 70,
+    "name": "YA10-LORIS"
+  },
+  "71": {
+    "id": 71,
+    "name": "CR-WA91MSM"
+  },
+  "72": {
+    "id": 72,
+    "name": "CR-LH69S"
+  },
+  "73": {
+    "id": 73,
+    "name": "LH04-DINGO"
+  },
+  "74": {
+    "id": 74,
+    "name": "CR-LH80S2"
+  },
+  "75": {
+    "id": 75,
+    "name": "LH02-LYNX2"
+  },
+  "76": {
+    "id": 76,
+    "name": "LH01-LYNX"
+  },
+  "77": {
+    "id": 77,
+    "name": "CR-LH73SSA"
+  },
+  "78": {
+    "id": 78,
+    "name": "CR-LH95M2"
+  },
+  "79": {
+    "id": 79,
+    "name": "LH03-PANTHER"
+  },
+  "80": {
+    "id": 80,
+    "name": "LH10-JAGUAR2"
+  },
+  "81": {
+    "id": 81,
+    "name": "CR-LH74M"
+  },
+  "82": {
+    "id": 82,
+    "name": "CR-LH77A"
+  },
+  "83": {
+    "id": 83,
+    "name": "CR-LH96FA"
+  },
+  "84": {
+    "id": 84,
+    "name": "LH08-JACKAL"
+  },
+  "85": {
+    "id": 85,
+    "name": "LH13-JACKAL2"
+  },
+  "86": {
+    "id": 86,
+    "name": "CR-LRJ76"
+  },
+  "87": {
+    "id": 87,
+    "name": "LR01-GOAT"
+  },
+  "88": {
+    "id": 88,
+    "name": "CR-LRJ84M"
+  },
+  "89": {
+    "id": 89,
+    "name": "CR-LRJ84A"
+  },
+  "90": {
+    "id": 90,
+    "name": "LR02-ORYX"
+  },
+  "91": {
+    "id": 91,
+    "name": "LF01-MONITOR"
+  },
+  "92": {
+    "id": 92,
+    "name": "LF04-LIZARD"
+  },
+  "93": {
+    "id": 93,
+    "name": "CR-LF71"
+  },
+  "94": {
+    "id": 94,
+    "name": "CR-LF88A"
+  },
+  "95": {
+    "id": 95,
+    "name": "CR-LF93A2"
+  },
+  "96": {
+    "id": 96,
+    "name": "CR-LT71"
+  },
+  "97": {
+    "id": 97,
+    "name": "CR-LT69"
+  },
+  "98": {
+    "id": 98,
+    "name": "LT01-BOAR"
+  },
+  "99": {
+    "id": 99,
+    "name": "LT02-BOAR2"
+  },
+  "100": {
+    "id": 100,
+    "name": "CR-LT78A"
+  },
+  "101": {
+    "id": 101,
+    "name": "LN01-SEAL"
+  },
+  "102": {
+    "id": 102,
+    "name": "LN03-WALRUS"
+  },
+  "103": {
+    "id": 103,
+    "name": "LN02-SEALION"
+  },
+  "104": {
+    "id": 104,
+    "name": "CR-LN91HM"
+  },
+  "105": {
+    "id": 105,
+    "name": "CR-LN85"
+  },
+  "106": {
+    "id": 106,
+    "name": "LH06-JAGUAR"
+  },
+  "107": {
+    "id": 107,
+    "name": "CR-LH79L"
+  },
+  "108": {
+    "id": 108,
+    "name": "CR-LH99XS"
+  },
+  "109": {
+    "id": 109,
+    "name": "LH05-COUGAR"
+  },
+  "110": {
+    "id": 110,
+    "name": "LH07-DINGO2"
+  },
+  "111": {
+    "id": 111,
+    "name": "CR-LH89F"
+  },
+  "112": {
+    "id": 112,
+    "name": "LH12-LYCAON"
+  },
+  "113": {
+    "id": 113,
+    "name": "CR-LH81AP"
+  },
+  "114": {
+    "id": 114,
+    "name": "CR-LH94A2"
+  },
+  "115": {
+    "id": 115,
+    "name": "LR04-GAZELLE"
+  },
+  "116": {
+    "id": 116,
+    "name": "LR03-ORYX2"
+  },
+  "117": {
+    "id": 117,
+    "name": "CR-LRJ90A2"
+  },
+  "118": {
+    "id": 118,
+    "name": "CR-LF81"
+  },
+  "119": {
+    "id": 119,
+    "name": "LF02-GAVIAL"
+  },
+  "120": {
+    "id": 120,
+    "name": "LF03-GAVIAL2"
+  },
+  "121": {
+    "id": 121,
+    "name": "CR-LHT92"
+  },
+  "122": {
+    "id": 122,
+    "name": "LT03-GRIZZLY"
+  },
+  "123": {
+    "id": 123,
+    "name": "CR-LT81A2"
+  },
+  "124": {
+    "id": 124,
+    "name": "CR-LN99M2"
+  },
+  "125": {
+    "id": 125,
+    "name": "CR-LN79"
+  },
+  "126": {
+    "id": 126,
+    "name": "LN04-WALRUS2"
+  },
+  "127": {
+    "id": 127,
+    "name": "CR-LH84L2"
+  },
+  "128": {
+    "id": 128,
+    "name": "CR-LH92S3"
+  },
+  "129": {
+    "id": 129,
+    "name": "LH09-COUGAR2"
+  },
+  "130": {
+    "id": 130,
+    "name": "YLH11-VIXEN"
+  },
+  "131": {
+    "id": 131,
+    "name": "CR-B69"
+  },
+  "132": {
+    "id": 132,
+    "name": "CR-B72T"
+  },
+  "133": {
+    "id": 133,
+    "name": "B02-VULTURE"
+  },
+  "134": {
+    "id": 134,
+    "name": "B01-BIRDIE"
+  },
+  "135": {
+    "id": 135,
+    "name": "CR-B83TP"
+  },
+  "136": {
+    "id": 136,
+    "name": "B03-VULTURE2"
+  },
+  "137": {
+    "id": 137,
+    "name": "CR-B81"
+  },
+  "138": {
+    "id": 138,
+    "name": "B04-BIRDIE2"
+  },
+  "139": {
+    "id": 139,
+    "name": "CR-B90T2"
+  },
+  "140": {
+    "id": 140,
+    "name": "B05-GULL"
+  },
+  "141": {
+    "id": 141,
+    "name": "B07-VULTURE3"
+  },
+  "142": {
+    "id": 142,
+    "name": "CR-B88TP2"
+  },
+  "143": {
+    "id": 143,
+    "name": "B06-GULL2"
+  },
+  "144": {
+    "id": 144,
+    "name": "MF01-MUREX"
+  },
+  "145": {
+    "id": 145,
+    "name": "MF03-VOLUTE2"
+  },
+  "146": {
+    "id": 146,
+    "name": "MF02-VOLUTE"
+  },
+  "147": {
+    "id": 147,
+    "name": "CR-F69"
+  },
+  "148": {
+    "id": 148,
+    "name": "CR-F73H"
+  },
+  "149": {
+    "id": 149,
+    "name": "VREX-WS-1"
+  },
+  "150": {
+    "id": 150,
+    "name": "MF05-LIMPET"
+  },
+  "151": {
+    "id": 151,
+    "name": "CR-F75D"
+  },
+  "152": {
+    "id": 152,
+    "name": "CR-F82D2"
+  },
+  "153": {
+    "id": 153,
+    "name": "MF04-COWRY"
+  },
+  "154": {
+    "id": 154,
+    "name": "VREX-WS-1"
+  },
+  "155": {
+    "id": 155,
+    "name": "CR-F91DSN"
+  },
+  "156": {
+    "id": 156,
+    "name": "CR-G69"
+  },
+  "157": {
+    "id": 157,
+    "name": "CR-G78"
+  },
+  "158": {
+    "id": 158,
+    "name": "G01-LOTUS"
+  },
+  "159": {
+    "id": 159,
+    "name": "G02-MAGNOLIA"
+  },
+  "160": {
+    "id": 160,
+    "name": "CR-G84P"
+  },
+  "161": {
+    "id": 161,
+    "name": "G03-ORCHID"
+  },
+  "162": {
+    "id": 162,
+    "name": "CR-G91"
+  },
+  "163": {
+    "id": 163,
+    "name": "CR-G96P2"
+  },
+  "164": {
+    "id": 164,
+    "name": "CR-R69"
+  },
+  "165": {
+    "id": 165,
+    "name": "CR-R76"
+  },
+  "166": {
+    "id": 166,
+    "name": "R01-HAZEL"
+  },
+  "167": {
+    "id": 167,
+    "name": "R03-LINDEN"
+  },
+  "168": {
+    "id": 168,
+    "name": "CR-R92"
+  },
+  "169": {
+    "id": 169,
+    "name": "R04-LAUREL"
+  },
+  "170": {
+    "id": 170,
+    "name": "R02-HAZEL2"
+  },
+  "171": {
+    "id": 171,
+    "name": "CR-R94S3"
+  },
+  "172": {
+    "id": 172,
+    "name": "CR-I69BD"
+  },
+  "173": {
+    "id": 173,
+    "name": "CR-I75FM"
+  },
+  "174": {
+    "id": 174,
+    "name": "CR-I86FMM"
+  },
+  "175": {
+    "id": 175,
+    "name": "I01M-URCHIN"
+  },
+  "176": {
+    "id": 176,
+    "name": "CR-I84RN"
+  },
+  "177": {
+    "id": 177,
+    "name": "I05D-MEDUSA"
+  },
+  "178": {
+    "id": 178,
+    "name": "I07D-MEDUSA2"
+  },
+  "179": {
+    "id": 179,
+    "name": "I04E-SQUID"
+  },
+  "180": {
+    "id": 180,
+    "name": "CR-I79DD"
+  },
+  "181": {
+    "id": 181,
+    "name": "CR-I94DD2"
+  },
+  "182": {
+    "id": 182,
+    "name": "I03RN-CORAL"
+  },
+  "183": {
+    "id": 183,
+    "name": "CR-I92FMM2"
+  },
+  "184": {
+    "id": 184,
+    "name": "CR-I80BD2"
+  },
+  "185": {
+    "id": 185,
+    "name": "I06E-SQUID2"
+  },
+  "186": {
+    "id": 186,
+    "name": "CR-I69R"
+  },
+  "187": {
+    "id": 187,
+    "name": "CR-I78R2"
+  },
+  "188": {
+    "id": 188,
+    "name": "E04BB-ANGLER"
+  },
+  "189": {
+    "id": 189,
+    "name": "E08BM-REMORA"
+  },
+  "190": {
+    "id": 190,
+    "name": "CR-E98HB"
+  },
+  "191": {
+    "id": 191,
+    "name": "E02RM-GAR"
+  },
+  "192": {
+    "id": 192,
+    "name": "CR-E84RM2"
+  },
+  "193": {
+    "id": 193,
+    "name": "CR-E81AM"
+  },
+  "194": {
+    "id": 194,
+    "name": "CR-E90AM2"
+  },
+  "195": {
+    "id": 195,
+    "name": "E07AM-MORAY"
+  },
+  "196": {
+    "id": 196,
+    "name": "E03S-TURBOT"
+  },
+  "197": {
+    "id": 197,
+    "name": "CR-E69SS"
+  },
+  "198": {
+    "id": 198,
+    "name": "CR-E82SS2"
+  },
+  "199": {
+    "id": 199,
+    "name": "E06RM-GAR2"
+  },
+  "200": {
+    "id": 200,
+    "name": "CR-E92RM3"
+  },
+  "201": {
+    "id": 201,
+    "name": "CR-E73RM"
+  },
+  "202": {
+    "id": 202,
+    "name": "CR-E96RMG"
+  },
+  "203": {
+    "id": 203,
+    "name": "E01MG-ROE"
+  },
+  "204": {
+    "id": 204,
+    "name": "E05MG-ROE2"
+  },
+  "205": {
+    "id": 205,
+    "name": "CR-WB69M"
+  },
+  "206": {
+    "id": 206,
+    "name": "WB01M-NYMPHE"
+  },
+  "207": {
+    "id": 207,
+    "name": "CR-WB72M2"
+  },
+  "208": {
+    "id": 208,
+    "name": "WB04M-NYMPHE2"
+  },
+  "209": {
+    "id": 209,
+    "name": "WB05M-SATYROS"
+  },
+  "210": {
+    "id": 210,
+    "name": "CR-WB73MP"
+  },
+  "211": {
+    "id": 211,
+    "name": "CR-WB73MV"
+  },
+  "212": {
+    "id": 212,
+    "name": "WB06M-SPARTOI"
+  },
+  "213": {
+    "id": 213,
+    "name": "WB11M-HYDRA"
+  },
+  "214": {
+    "id": 214,
+    "name": "CR-WB82MGT"
+  },
+  "215": {
+    "id": 215,
+    "name": "CR-WB85MPX"
+  },
+  "216": {
+    "id": 216,
+    "name": "CR-WB69RO"
+  },
+  "217": {
+    "id": 217,
+    "name": "CR-WB72RO2"
+  },
+  "218": {
+    "id": 218,
+    "name": "CR-WB75RP"
+  },
+  "219": {
+    "id": 219,
+    "name": "WB07RO-ORTHOS"
+  },
+  "220": {
+    "id": 220,
+    "name": "CR-WB69CG"
+  },
+  "221": {
+    "id": 221,
+    "name": "CR-WB75SG"
+  },
+  "222": {
+    "id": 222,
+    "name": "CR-WB87GLL"
+  },
+  "223": {
+    "id": 223,
+    "name": "CR-WB78GL"
+  },
+  "224": {
+    "id": 224,
+    "name": "WB08PL-SKYLLA"
+  },
+  "225": {
+    "id": 225,
+    "name": "WB02L-GERYON"
+  },
+  "226": {
+    "id": 226,
+    "name": "WB09PU-LAMIA"
+  },
+  "227": {
+    "id": 227,
+    "name": "WB16PU-LAMIA2"
+  },
+  "228": {
+    "id": 228,
+    "name": "WB26O-HARPY"
+  },
+  "229": {
+    "id": 229,
+    "name": "CR-WB69RA"
+  },
+  "230": {
+    "id": 230,
+    "name": "CR-WB73RA2"
+  },
+  "231": {
+    "id": 231,
+    "name": "WB03R-SIREN"
+  },
+  "232": {
+    "id": 232,
+    "name": "WB10R-SIREN2"
+  },
+  "233": {
+    "id": 233,
+    "name": "WB17R-SIREN3"
+  },
+  "234": {
+    "id": 234,
+    "name": "CR-WBW89M"
+  },
+  "235": {
+    "id": 235,
+    "name": "WB29M-ECHIDNA"
+  },
+  "236": {
+    "id": 236,
+    "name": "CR-WBW98LX"
+  },
+  "237": {
+    "id": 237,
+    "name": "WB30Q-CHIMERA"
+  },
+  "238": {
+    "id": 238,
+    "name": "WB12M-EMPUSA"
+  },
+  "239": {
+    "id": 239,
+    "name": "WB21M-DRYAD"
+  },
+  "240": {
+    "id": 240,
+    "name": "WB22M-DRYAD2"
+  },
+  "241": {
+    "id": 241,
+    "name": "WB19M-HYDRA2"
+  },
+  "242": {
+    "id": 242,
+    "name": "WB13RO-SPHINX"
+  },
+  "243": {
+    "id": 243,
+    "name": "CR-WB85RPX"
+  },
+  "244": {
+    "id": 244,
+    "name": "CR-WB82RP3"
+  },
+  "245": {
+    "id": 245,
+    "name": "CR-WB78RP2"
+  },
+  "246": {
+    "id": 246,
+    "name": "WB23RO-CACUS"
+  },
+  "247": {
+    "id": 247,
+    "name": "CR-WB82SG2"
+  },
+  "248": {
+    "id": 248,
+    "name": "CR-WB87LG"
+  },
+  "249": {
+    "id": 249,
+    "name": "CR-WB72CGL"
+  },
+  "250": {
+    "id": 250,
+    "name": "WB27O-HARPY2"
+  },
+  "251": {
+    "id": 251,
+    "name": "WB25PU-LAMIA3"
+  },
+  "252": {
+    "id": 252,
+    "name": "WB15L-GERYON2"
+  },
+  "253": {
+    "id": 253,
+    "name": "CR-WB85RA3"
+  },
+  "254": {
+    "id": 254,
+    "name": "WB28R-SIREN4"
+  },
+  "255": {
+    "id": 255,
+    "name": "WB18M-CENTAUR"
+  },
+  "256": {
+    "id": 256,
+    "name": "CR-WBW94M2"
+  },
+  "257": {
+    "id": 257,
+    "name": "CR-WBW98G"
+  },
+  "258": {
+    "id": 258,
+    "name": "WB31B-PEGASUS"
+  },
+  "259": {
+    "id": 259,
+    "name": "CR-WBW78C"
+  },
+  "260": {
+    "id": 260,
+    "name": "CR-WB91MB"
+  },
+  "261": {
+    "id": 261,
+    "name": "CR-WB91LGL"
+  },
+  "262": {
+    "id": 262,
+    "name": "WB20M-EMPUSA2"
+  },
+  "263": {
+    "id": 263,
+    "name": "CR-WB75MT"
+  },
+  "264": {
+    "id": 264,
+    "name": "CR-WB94MB2"
+  },
+  "265": {
+    "id": 265,
+    "name": "WB14RG-LADON"
+  },
+  "266": {
+    "id": 266,
+    "name": "WB24RG-LADON2"
+  },
+  "267": {
+    "id": 267,
+    "name": "CR-WBW78R"
+  },
+  "268": {
+    "id": 268,
+    "name": "CR-WBW91RT"
+  },
+  "269": {
+    "id": 269,
+    "name": "CR-WR69R"
+  },
+  "270": {
+    "id": 270,
+    "name": "CR-WR73R2"
+  },
+  "271": {
+    "id": 271,
+    "name": "WR02M-PIXIE"
+  },
+  "272": {
+    "id": 272,
+    "name": "CR-WR69M"
+  },
+  "273": {
+    "id": 273,
+    "name": "WR04M-PIXIE2"
+  },
+  "274": {
+    "id": 274,
+    "name": "WR03H-GHOST"
+  },
+  "275": {
+    "id": 275,
+    "name": "CR-WR76B"
+  },
+  "276": {
+    "id": 276,
+    "name": "CR-WR81B2"
+  },
+  "277": {
+    "id": 277,
+    "name": "CR-WR84S"
+  },
+  "278": {
+    "id": 278,
+    "name": "WR15S-WYVERN"
+  },
+  "279": {
+    "id": 279,
+    "name": "CR-WR84HNM"
+  },
+  "280": {
+    "id": 280,
+    "name": "CR-WR84HNR"
+  },
+  "281": {
+    "id": 281,
+    "name": "CR-WR81G"
+  },
+  "282": {
+    "id": 282,
+    "name": "WR08PU-ROC"
+  },
+  "283": {
+    "id": 283,
+    "name": "WR21PU-ROC3"
+  },
+  "284": {
+    "id": 284,
+    "name": "WR05L-SHADE"
+  },
+  "285": {
+    "id": 285,
+    "name": "WR09HL-SPIRIT"
+  },
+  "286": {
+    "id": 286,
+    "name": "WR20PL-OGRE"
+  },
+  "287": {
+    "id": 287,
+    "name": "CR-WR84RA2"
+  },
+  "288": {
+    "id": 288,
+    "name": "CR-WR76RA"
+  },
+  "289": {
+    "id": 289,
+    "name": "WR01R-SHADOW"
+  },
+  "290": {
+    "id": 290,
+    "name": "CR-WR73RS"
+  },
+  "291": {
+    "id": 291,
+    "name": "CR-WR81RS2"
+  },
+  "292": {
+    "id": 292,
+    "name": "CR-WR88RS3"
+  },
+  "293": {
+    "id": 293,
+    "name": "WR11RS-GARUM"
+  },
+  "294": {
+    "id": 294,
+    "name": "CR-WR88H"
+  },
+  "295": {
+    "id": 295,
+    "name": "WR23S-WYVERN2"
+  },
+  "296": {
+    "id": 296,
+    "name": "WR13B-GIANT"
+  },
+  "297": {
+    "id": 297,
+    "name": "CR-WR93B3"
+  },
+  "298": {
+    "id": 298,
+    "name": "WR17B-GIANT2"
+  },
+  "299": {
+    "id": 299,
+    "name": "CR-WR93HNRP"
+  },
+  "300": {
+    "id": 300,
+    "name": "CR-WR88G2"
+  },
+  "301": {
+    "id": 301,
+    "name": "WR22PL-OGRE2"
+  },
+  "302": {
+    "id": 302,
+    "name": "WR12PU-ROC2"
+  },
+  "303": {
+    "id": 303,
+    "name": "WR18PU-DEMON"
+  },
+  "304": {
+    "id": 304,
+    "name": "WR19L-HOLLOW"
+  },
+  "305": {
+    "id": 305,
+    "name": "WR16DL-SKULL"
+  },
+  "306": {
+    "id": 306,
+    "name": "WR25DL-SKULL2"
+  },
+  "307": {
+    "id": 307,
+    "name": "CR-WR98L"
+  },
+  "308": {
+    "id": 308,
+    "name": "WR06H-GHOST2"
+  },
+  "309": {
+    "id": 309,
+    "name": "WR07M-PIXIE3"
+  },
+  "310": {
+    "id": 310,
+    "name": "WR24L-SHADE2"
+  },
+  "311": {
+    "id": 311,
+    "name": "CR-WR88RB"
+  },
+  "312": {
+    "id": 312,
+    "name": "WR14R-PHANTOM"
+  },
+  "313": {
+    "id": 313,
+    "name": "WR10R-MOLD"
+  },
+  "314": {
+    "id": 314,
+    "name": "CR-WR93RL"
+  },
+  "315": {
+    "id": 315,
+    "name": "WH01R-GAST"
+  },
+  "316": {
+    "id": 316,
+    "name": "YWH07-DRAGON"
+  },
+  "317": {
+    "id": 317,
+    "name": "WH02RS-WYRM"
+  },
+  "318": {
+    "id": 318,
+    "name": "CR-WH79M2"
+  },
+  "319": {
+    "id": 319,
+    "name": "WH03M-FINGER"
+  },
+  "320": {
+    "id": 320,
+    "name": "WH05M-SYLPH"
+  },
+  "321": {
+    "id": 321,
+    "name": "CR-WH69H"
+  },
+  "322": {
+    "id": 322,
+    "name": "CR-WH73H2"
+  },
+  "323": {
+    "id": 323,
+    "name": "CR-WH79H3"
+  },
+  "324": {
+    "id": 324,
+    "name": "CR-WH76S"
+  },
+  "325": {
+    "id": 325,
+    "name": "CR-WH98GL"
+  },
+  "326": {
+    "id": 326,
+    "name": "WH04HL-KRSW"
+  },
+  "327": {
+    "id": 327,
+    "name": "WH06PL-ORC"
+  },
+  "328": {
+    "id": 328,
+    "name": "CR-WL69LB"
+  },
+  "329": {
+    "id": 329,
+    "name": "WL01LB-ELF"
+  },
+  "330": {
+    "id": 330,
+    "name": "CR-WL79LB2"
+  },
+  "331": {
+    "id": 331,
+    "name": "CR-WL74ES"
+  },
+  "332": {
+    "id": 332,
+    "name": "CR-WL85ES2"
+  },
+  "333": {
+    "id": 333,
+    "name": "WL04ES-GIGAS"
+  },
+  "334": {
+    "id": 334,
+    "name": "WL02R-SPECTER"
+  },
+  "335": {
+    "id": 335,
+    "name": "WL05RS-GOLEM"
+  },
+  "336": {
+    "id": 336,
+    "name": "CR-WL85RS"
+  },
+  "337": {
+    "id": 337,
+    "name": "WL06M-FAIRY"
+  },
+  "338": {
+    "id": 338,
+    "name": "CR-WL74M"
+  },
+  "339": {
+    "id": 339,
+    "name": "WL07H-MIST"
+  },
+  "340": {
+    "id": 340,
+    "name": "WL10H-MIST2"
+  },
+  "341": {
+    "id": 341,
+    "name": "CR-WL85S"
+  },
+  "342": {
+    "id": 342,
+    "name": "CR-WL88S2"
+  },
+  "343": {
+    "id": 343,
+    "name": "CR-WL95B"
+  },
+  "344": {
+    "id": 344,
+    "name": "WL11B-TROLL"
+  },
+  "345": {
+    "id": 345,
+    "name": "CR-WL79HNM"
+  },
+  "346": {
+    "id": 346,
+    "name": "CR-WL95G"
+  },
+  "347": {
+    "id": 347,
+    "name": "CR-WL88HNR"
+  },
+  "348": {
+    "id": 348,
+    "name": "CR-WL95HNNR"
+  },
+  "349": {
+    "id": 349,
+    "name": "WL08PU-ARGOS"
+  },
+  "350": {
+    "id": 350,
+    "name": "WL12PU-ARGOS2"
+  },
+  "351": {
+    "id": 351,
+    "name": "WL13L-GORGON"
+  },
+  "352": {
+    "id": 352,
+    "name": "WL15L-GRIFFON"
+  },
+  "353": {
+    "id": 353,
+    "name": "CR-WL88LB3"
+  },
+  "354": {
+    "id": 354,
+    "name": "WL14LB-ELF2"
+  },
+  "355": {
+    "id": 355,
+    "name": "WL09ES-GIGAS2"
+  },
+  "356": {
+    "id": 356,
+    "name": "YWL03LB-TAROS"
+  },
+  "357": {
+    "id": 357,
+    "name": "WH01R-GAST"
+  },
+  "358": {
+    "id": 358,
+    "name": "YWH07-DRAGON"
+  },
+  "359": {
+    "id": 359,
+    "name": "WH02RS-WYRM"
+  },
+  "360": {
+    "id": 360,
+    "name": "CR-WH79M2"
+  },
+  "361": {
+    "id": 361,
+    "name": "WH03M-FINGER"
+  },
+  "362": {
+    "id": 362,
+    "name": "WH05M-SYLPH"
+  },
+  "363": {
+    "id": 363,
+    "name": "CR-WH69H"
+  },
+  "364": {
+    "id": 364,
+    "name": "CR-WH73H2"
+  },
+  "365": {
+    "id": 365,
+    "name": "CR-WH79H3"
+  },
+  "366": {
+    "id": 366,
+    "name": "CR-WH76S"
+  },
+  "367": {
+    "id": 367,
+    "name": "CR-WH98GL"
+  },
+  "368": {
+    "id": 368,
+    "name": "WH04HL-KRSW"
+  },
+  "369": {
+    "id": 369,
+    "name": "WH06PL-ORC"
+  },
+  "370": {
+    "id": 370,
+    "name": "O01-AMINO"
+  },
+  "371": {
+    "id": 371,
+    "name": "CR-O69ES"
+  },
+  "372": {
+    "id": 372,
+    "name": "CR-O69SS"
+  },
+  "373": {
+    "id": 373,
+    "name": "CR-O71EC"
+  },
+  "374": {
+    "id": 374,
+    "name": "CR-O75LA"
+  },
+  "375": {
+    "id": 375,
+    "name": "CR-O79L"
+  },
+  "376": {
+    "id": 376,
+    "name": "O02-ORGANELLE"
+  },
+  "377": {
+    "id": 377,
+    "name": "O03-CODON"
+  },
+  "378": {
+    "id": 378,
+    "name": "CR-O83ES"
+  },
+  "379": {
+    "id": 379,
+    "name": "O07-PRIMER"
+  },
+  "380": {
+    "id": 380,
+    "name": "O04-GOLGI"
+  },
+  "381": {
+    "id": 381,
+    "name": "O05-HISTON"
+  },
+  "382": {
+    "id": 382,
+    "name": "O06-PHAGE"
+  },
+  "383": {
+    "id": 383,
+    "name": "O08-RIBOSE"
+  },
+  "384": {
+    "id": 384,
+    "name": "CR-O86R"
+  },
+  "385": {
+    "id": 385,
+    "name": "CR-O94ESS"
+  },
+  "386": {
+    "id": 386,
+    "name": "CR-O94ESS"
+  }
+}

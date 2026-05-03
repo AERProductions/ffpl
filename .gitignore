@@ -1,0 +1,164 @@
+# Binary assets & game files
+*.bin
+*.iso
+*.exe
+*.zip
+
+# Nested repo clone (reference only)
+save-file-converter/
+
+# Stray git directory copy (leftover from nuclear reset)
+.git - Copy/
+
+# ─── PRIVATE REPO FILES ────────────────────────────────────────────────────
+# Everything below belongs in the PRIVATE server repo (AERProductions/ffpl-server)
+# and must NOT be committed to the public repo (AERProductions/ffpl).
+server.go
+parse_apollo.go
+backend/
+deploy/
+_scripts/
+re_archive/
+pocketbase/
+commissioners.json
+arch-nexus-web/
+memory-bank/
+*.ppst
+*.ppst_decomp*
+
+# ─── END PRIVATE FILES ─────────────────────────────────────────────────────
+
+# PPSSPP — entire directory excluded from public repo
+ppsspp/
+
+# Game ISO extracts
+iso_extract_jp/
+iso_extract_us/
+
+# YakForge AI index (regenerated automatically)
+.yakforge/
+
+# ─── RE RESEARCH ARTIFACTS (never production) ────────────────────────────
+dump_*.bin
+snap_*.bin
+ppst_decomp_*.bin
+*.pkl
+live_diff_out.txt
+out_*.txt
+re_*.py
+color_*.py
+find_*.py
+scan_*.py
+stride_*.py
+inject_*.py
+inspect_*.py
+bp_listen.py
+ramdiff.py
+live_diff.py
+check_t2_ui_table.py
+copy_ptr_scan.py
+intersect_colors.py
+probe_t2_frm.py
+probe_t2_*.py
+probe_*.mjs
+read_t2_*.mjs
+ws_*.py
+snap_diff*.py
+snap_diff*.txt
+analyze_jp.py
+diff_s3_s4_region.py
+dump_t2.py
+fast_t2_scan.py
+s2_vs_c1_full.py
+ptr_stride.py
+pure_color_diff.py
+test_diff.py
+cmd_ramdiff/
+dump_adhocbattle*.bin
+dump_camoset*.bin
+dump_colors*.bin
+dump_colorcopy*.bin
+dump_grid*.bin
+dump_jp*.bin
+dump_replay*.bin
+dump_stageselect*.bin
+dump_t2*.bin
+dump_versus*.bin
+dump_vict*.bin
+dump_weapon*.bin
+frmmain_*.bin
+# ─── END RE ARTIFACTS ────────────────────────────────────────────────────
+
+# Node
+node_modules/
+dist/
+build/
+
+# Env
+*.env
+
+# PocketBase runtime
+pocketbase/
+pb_data/
+
+# Per-app node_modules
+ffpl-hq/node_modules/
+VLO/node_modules/
+
+*.sfo
+
+# Scratch / one-off bins
+null
+tmp_parts.txt
+tmp_struct_dump.txt
+
+# Backup files
+*.bak
+
+# Duplicate / spare PPSSPP install (858MB — not committed)
+ppsspp1/
+
+# Active research RAM dumps
+dump_*.bin
+
+# Re_archive large binary subdirs (tracked at directory level, not individual files)
+re_archive/binary_dumps/
+re_archive/acffebdump/
+game.key
+*.key
+
+# Root-level PPSSPP state copy
+PPSSPP_STATE/
+
+# Scratch text / temp output files
+err.txt
+temp.txt
+unused.txt
+compress_results.txt
+backup_acparser.txt
+chunks.txt
+yakforge_strings.txt
+eboot_strings.txt
+eboot_strings2.txt
+ppsspp_help.txt
+memorychipsconvo.md
+
+# RE script output files
+out_*.txt
+*.pkl
+live_diff_out.txt
+snap_diff_results.txt
+re_t2_sec_frm_ppst.txt
+re_t2_sec_frm_wide.txt
+
+# PPSSPP cheats (runtime, not source)
+ppsspp/memstick/PSP/Cheats/
+
+# JP unlock save data (DATA.BIN tracked by *.bin rule above, ignore dir)
+JPUnlocksave/
+
+# PPSSPP save slot S003 (DATA.BIN binary ignored by *.bin, ignore whole slot dir)
+ppsspp/memstick/PSP/SAVEDATA/ULUS10034S003/
+
+# Re-archive (old conversation logs, not source)
+re_archive/

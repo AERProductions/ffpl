@@ -1,0 +1,271 @@
+{
+    "team": [
+        {
+            "ac_name": "FORMULA FRON",
+            "ram_offset": "0x852159",
+            "hardware": {
+                "Arms": "0 - None",
+                "Arm_L": "0 - None",
+                "Head": "0 - None",
+                "Back_R": "0 - None",
+                "Back_L": "0 - None"
+            },
+            "ai_performance": {
+                "Enemy_Base": 0
+            },
+            "operations_grid": []
+        },
+        {
+            "ac_name": "FORMULA F 01",
+            "ram_offset": "0x85f5f0",
+            "hardware": {
+                "Arms": "60 - Unknown ID (60)",
+                "Arm_L": "0 - None",
+                "Head": "0 - None",
+                "Back_R": "0 - None",
+                "Back_L": "0 - None"
+            },
+            "ai_performance": {
+                "Enemy_Base": 0
+            },
+            "operations_grid": [
+                [
+                    "MOS-1",
+                    "ATF-4",
+                    "ATB-1",
+                    "WEC-1",
+                    "WEP-1",
+                    "NAT-1"
+                ],
+                [
+                    "---",
+                    "---",
+                    "---",
+                    "---",
+                    "---",
+                    "---"
+                ],
+                [
+                    "---",
+                    "---",
+                    "---",
+                    "---",
+                    "---",
+                    "---"
+                ],
+                [
+                    "---",
+                    "---",
+                    "---",
+                    "---",
+                    "---",
+                    "---"
+                ],
+                [
+                    "---",
+                    "---",
+                    "---",
+                    "---",
+                    "---",
+                    "---"
+                ],
+                [
+                    "---",
+                    "---",
+                    "---",
+                    "---",
+                    "---",
+                    "---"
+                ]
+            ]
+        },
+        {
+            "ac_name": "FORMULA F 02",
+            "ram_offset": "0x85fc94",
+            "hardware": {
+                "Arms": "90 - Unknown ID (90)",
+                "Arm_L": "0 - None",
+                "Head": "0 - None",
+                "Back_R": "0 - None",
+                "Back_L": "0 - None"
+            },
+            "ai_performance": {
+                "Enemy_Base": 0
+            },
+            "operations_grid": []
+        },
+        {
+            "ac_name": "FORMULA F 03",
+            "ram_offset": "0x860338",
+            "hardware": {
+                "Arms": "60 - Unknown ID (60)",
+                "Arm_L": "0 - None",
+                "Head": "0 - None",
+                "Back_R": "0 - None",
+                "Back_L": "0 - None"
+            },
+            "ai_performance": {
+                "Enemy_Base": 0
+            },
+            "operations_grid": []
+        },
+        {
+            "ac_name": "FORMULA F 04",
+            "ram_offset": "0x8609dc",
+            "hardware": {
+                "Arms": "60 - Unknown ID (60)",
+                "Arm_L": "0 - None",
+                "Head": "0 - None",
+                "Back_R": "0 - None",
+                "Back_L": "0 - None"
+            },
+            "ai_performance": {
+                "Enemy_Base": 0
+            },
+            "operations_grid": []
+        },
+        {
+            "ac_name": "FORMULA F 05",
+            "ram_offset": "0x861080",
+            "hardware": {
+                "Arms": "60 - Unknown ID (60)",
+                "Arm_L": "0 - None",
+                "Head": "0 - None",
+                "Back_R": "0 - None",
+                "Back_L": "0 - None"
+            },
+            "ai_performance": {
+                "Enemy_Base": 0
+            },
+            "operations_grid": []
+        },
+        {
+            "ac_name": "FORMULA F 01",
+            "ram_offset": "0x869390",
+            "hardware": {
+                "Arms": "60 - Unknown ID (60)",
+                "Arm_L": "0 - None",
+                "Head": "0 - None",
+                "Back_R": "0 - None",
+                "Back_L": "0 - None"
+            },
+            "ai_performance": {
+                "Enemy_Base": 0
+            },
+            "operations_grid": [
+                [
+                    "---",
+                    "---",
+                    "---",
+                    "---",
+                    "---",
+                    "---"
+                ],
+                [
+                    "---",
+                    "---",
+                    "---",
+                    "---",
+                    "---",
+                    "---"
+                ],
+                [
+                    "---",
+                    "---",
+                    "---",
+                    "---",
+                    "---",
+                    "---"
+                ],
+                [
+                    "---",
+                    "---",
+                    "---",
+                    "---",
+                    "---",
+                    "---"
+                ],
+                [
+                    "---",
+                    "---",
+                    "---",
+                    "---",
+                    "---",
+                    "---"
+                ],
+                [
+                    "---",
+                    "---",
+                    "---",
+                    "---",
+                    "---",
+                    "---"
+                ]
+            ]
+        },
+        {
+            "ac_name": "FORMULA F 01",
+            "ram_offset": "0xc94f6c",
+            "hardware": {
+                "Arms": "46 - Unknown ID (46)",
+                "Arm_L": "328 - Unknown ID (328)",
+                "Head": "7 - Unknown ID (7)",
+                "Back_R": "7 - Unknown ID (7)",
+                "Back_L": "7 - Unknown ID (7)"
+            },
+            "ai_performance": {
+                "Enemy_Base": 112
+            },
+            "operations_grid": [
+                [
+                    "Chip_55",
+                    "Chip_59",
+                    "Chip_210",
+                    "Chip_207",
+                    "Chip_205",
+                    "Chip_202"
+                ],
+                [
+                    "Chip_16",
+                    "MOS-1",
+                    "Chip_12",
+                    "ATF-4",
+                    "ATF-4",
+                    "ATF-4"
+                ],
+                [
+                    "ATF-4",
+                    "Chip_11",
+                    "ATF-4",
+                    "Chip_11",
+                    "Chip_53",
+                    "Chip_57"
+                ],
+                [
+                    "Chip_207",
+                    "Chip_205",
+                    "Chip_203",
+                    "Chip_201",
+                    "Chip_12",
+                    "ATF-4"
+                ],
+                [
+                    "Chip_9",
+                    "Chip_8",
+                    "Chip_9",
+                    "Chip_9",
+                    "ATF-4",
+                    "Chip_9"
+                ],
+                [
+                    "ATF-4",
+                    "ATF-4",
+                    "Chip_53",
+                    "Chip_56",
+                    "Chip_206",
+                    "Chip_204"
+                ]
+            ]
+        }
+    ]
+}

@@ -1,0 +1,141 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write       # create GitHub release + upload assets
+  id-token:  write      # required for build provenance attestation
+  attestations: write   # required for build provenance attestation
+
+jobs:
+  build-windows:
+    name: Windows build
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: true
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Wails
+        run: go install github.com/wailsapp/wails/v2/cmd/wails@latest
+
+      - name: Install frontend deps
+        working-directory: ffpl-hq
+        run: npm ci
+
+      - name: Build (Windows)
+        run: wails build -platform windows/amd64 -ldflags "-X main.version=${{ github.ref_name }}"
+
+      - name: Attest build provenance
+        uses: actions/attest-build-provenance@v1
+        with:
+          subject-path: build/bin/ffpl.exe
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ffpl-windows-amd64
+          path: build/bin/ffpl.exe
+          retention-days: 1
+
+  build-linux:
+    name: Linux build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: true
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Wails deps
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y libgtk-3-dev libwebkit2gtk-4.0-dev
+
+      - name: Install Wails
+        run: go install github.com/wailsapp/wails/v2/cmd/wails@latest
+
+      - name: Install frontend deps
+        working-directory: ffpl-hq
+        run: npm ci
+
+      - name: Build (Linux)
+        run: wails build -platform linux/amd64 -ldflags "-X main.version=${{ github.ref_name }}"
+
+      - name: Attest build provenance
+        uses: actions/attest-build-provenance@v1
+        with:
+          subject-path: build/bin/ffpl
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ffpl-linux-amd64
+          path: build/bin/ffpl
+          retention-days: 1
+
+  release:
+    name: Publish GitHub Release
+    needs: [build-windows, build-linux]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download Windows binary
+        uses: actions/download-artifact@v4
+        with:
+          name: ffpl-windows-amd64
+          path: dist/
+
+      - name: Download Linux binary
+        uses: actions/download-artifact@v4
+        with:
+          name: ffpl-linux-amd64
+          path: dist/
+
+      - name: Rename binaries
+        working-directory: dist
+        run: |
+          mv ffpl.exe ffpl-${{ github.ref_name }}-windows-amd64.exe
+          mv ffpl    ffpl-${{ github.ref_name }}-linux-amd64
+          chmod +x   ffpl-${{ github.ref_name }}-linux-amd64
+
+      - name: Create release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: "Architect Nexus ${{ github.ref_name }}"
+          body: |
+            ## Architect Nexus ${{ github.ref_name }}
+
+            Download the binary for your platform below.
+
+            **Verify your download**
+            ```
+            gh attestation verify ffpl-${{ github.ref_name }}-windows-amd64.exe \
+              --repo AERProductions/ffpl
+            ```
+
+            The parser source (`parser/`) is auditable in this repo.
+            The league server is private. Match results are signed by the server
+            and verifiable on the [FFPL HQ leaderboard](https://ffplhq.com/hq/).
+          files: |
+            dist/ffpl-${{ github.ref_name }}-windows-amd64.exe
+            dist/ffpl-${{ github.ref_name }}-linux-amd64
+          draft: false
+          prerelease: ${{ contains(github.ref_name, '-') }}

@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    name: Go tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: true
+
+      # Verify the parser sub-module independently — this is the unit the
+      # community audits, so it must pass on its own before anything else.
+      - name: Test parser sub-module
+        working-directory: parser
+        run: go test ./...
+
+      # Full root module test suite (backend: Glicko-2, validator, ppst_writer,
+      # jp_parse — skip fixtures that require local .bin files).
+      - name: Test root module
+        run: go test ./...
+
+      - name: Vet
+        run: go vet ./...

@@ -1,0 +1,1 @@
+{"name": "ffpl", "frontend:install": "npm install", "frontend:build": "npm run build", "frontend:dev:watcher": "npm run dev", "frontend:dev:serverUrl": "auto", "author": {"name": "FFPL Architect", "email": ""}, "info": {"company": "", "product": "", "copyright": "", "comments": ""}, "version": "1.0.0", "frontend:dir": "ffpl-hq", "wailsjsdir": "./ffpl-hq/src"}
