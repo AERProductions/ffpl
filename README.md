@@ -14,7 +14,7 @@ You design the machine. You train the AI. Then you step back and watch it win or
 
 FFPL wraps that premise in a full competitive structure:
 
-- **Verified loadouts** — your AC is extracted directly from your PPSSPP save file and cryptographically hashed, so no manual entry and no cheating
+- **Verified loadouts** — your AC is extracted directly from your PSP or PPSSPP save file and cryptographically hashed, so no manual entry and no cheating
 - **Glicko-2 rated ladder** — rating, deviation, and volatility update after every sanctioned result
 - **Asynchronous matchmaking** — challenge any pilot on the leaderboard; the match runs automatically on the league server and you get the result and replay link whenever it finishes
 - **Commissioner-sanctioned events** — licensed commissioners run tournaments and arbitrate disputes through the HQ tools
@@ -28,14 +28,16 @@ FFPL wraps that premise in a full competitive structure:
 
 Download the **Architect Nexus** desktop client from the [Releases page](https://github.com/AERProductions/ffpl/releases/latest).
 
-Architect Nexus is the desktop tool that connects your PPSSPP installation to the FFPL league server. It reads your save file, verifies your loadout, and handles match submission — you never touch the server directly.
+Architect Nexus is the desktop tool that reads your save file, verifies your loadout, and connects you to the FFPL league server — you never touch the server directly.
+
+Save files from real PSP hardware and PPSSPP are both supported.
 
 > A web client is also available at [ffplhq.com/hq/](https://ffplhq.com/hq/) — no install required for browsing standings and issuing challenges.
 
 ### 2 — Sync Your AC
 
-1. Open your PSP game in **PPSSPP** and save your team stable.
-2. Drop the save file (or point Architect Nexus at your PPSSPP memstick folder).
+1. Save your team in-game on real PSP hardware or in PPSSPP.
+2. Drop the save file into Architect Nexus (or point it at your PPSSPP memstick folder).
 3. Your five ACs are extracted, hashed, and pushed to your pilot profile automatically.
 
 ### 3 — Climb the Ladder
@@ -48,7 +50,7 @@ Anti-padding rules prevent rank farming. A 7-day cooldown applies per matchup. Y
 
 ## The Game
 
-*Armored Core: Formula Front — Extreme Battle* (ULUS-10061 / ULJS-19001) — PSP, 2005.
+*Armored Core: Formula Front — Extreme Battle* (ULUS-10034 / ULJS-19001 / ULES-00219) — PSP, 2005.
 
 Unlike every other Armored Core title, Formula Front is **not a reflex game**. You build a team of five unmanned ACs, program each one's AI logic using a grid of operation cards and performance tuners, and enter them into 5v5 team battles. The AI fights autonomously. Your job is pure engineering.
 
@@ -72,9 +74,9 @@ This makes it uniquely suited to an asynchronous online league: there is no late
 
 | Region | Game ID | Status |
 |---|---|---|
-| North America | ULUS-10061 | ✓ Supported |
+| North America | ULUS-10034 | ✓ Supported |
 | Japan | ULJS-19001 | ✓ Supported |
-| Europe | ULES-00622 | Planned |
+| Europe | ULES-00219 | ✓ Supported |
 
 Save files from all supported regions are parsed correctly. AC names in Japanese (full-width Unicode) display as-is in the HQ portal.
 
@@ -88,7 +90,7 @@ This repo contains the full FFPL stack:
 backend/          Go — save parser, Glicko-2, PPSSPP match runner, PocketBase client
 ffpl-hq/          React/Vite — League HQ desktop UI (Wails frontend)
 arch-nexus-web/   React/Vite — standalone web client
-landing/          Static HTML — ffplhq.com landing page
+landing/          Static HTML — legacy landing reference (deployed site: AERProductions/ffplhq)
 data/             AC part schema (ac_memory_schema.json)
 ```
 
