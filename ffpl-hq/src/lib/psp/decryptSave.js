@@ -33,9 +33,10 @@ export async function decryptPspSave(arrayBuffer) {
   const saveArr = new Uint8Array(arrayBuffer);
   
   // The Formula Front Extreme Battle Keys
+  // EU (ULES-00219) shares the same save key as US — confirmed from EBOOT at offset 0x0025256C
   const keysToTry = [
-    'e802030c605aa5241200a4931a00a593', // US
-    '4603030c6060a5241200a4931a00a593'  // JP International
+    'e802030c605aa5241200a4931a00a593', // US (ULUS-10034) + EU (ULES-00219)
+    '4603030c6060a5241200a4931a00a593', // JP International (ULJS19001)
   ];
   
   let decryptedBuf = null;

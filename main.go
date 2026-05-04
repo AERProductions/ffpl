@@ -1,3 +1,5 @@
+//go:build wails
+
 package main
 
 import (
@@ -11,9 +13,6 @@ import (
 
 //go:embed all:ffpl-hq/dist
 var assets embed.FS
-
-//go:embed data/* ffpl-hq/src/data/*
-var EmbeddedData embed.FS
 
 func main() {
 	app := NewApp()

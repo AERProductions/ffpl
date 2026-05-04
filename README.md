@@ -100,11 +100,14 @@ Requires [Go 1.22+](https://go.dev) and [Wails v2](https://wails.io).
 # Run tests
 go test ./...
 
-# Build the automation server only
-go build -o ffpl-server ./
+# Build the standalone automation server (no Wails, CGo-free)
+go build -o ffpl-server .
 
-# Build the full desktop app (Wails)
-wails build
+# Cross-compile for Linux (e.g. from Windows to Edubuntu server)
+CGO_ENABLED=0 GOOS=linux go build -o ffpl-server .
+
+# Build the full desktop app (Wails) — requires -tags wails
+wails build -tags wails
 ```
 
 ### Environment

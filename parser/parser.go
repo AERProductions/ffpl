@@ -8,8 +8,7 @@
 // Users can verify that their save data is read correctly and that no
 // unexpected data is extracted or transmitted.
 //
-// Supported regions: US (ULUS-10061), JP (ULJS-19001).
-// Europe (ULES-00622) planned.
+// Supported regions: US (ULUS-10034), JP (ULJS-19001), EU (ULES-00219).
 package parser
 
 import (
@@ -294,7 +293,13 @@ func maybeDecompressZSTD(data []byte) ([]byte, error) {
 	return out, nil
 }
 
+// detectRegion returns "EU", "JP", or "US" based on game ID strings embedded
+// in the decompressed PSP RAM dump.
+// EU binary (ULES00219) embeds both "ULES" and "ULJS" — check ULES first.
 func detectRegion(unpacked []byte) string {
+	if bytes.Contains(unpacked, []byte("ULES")) {
+		return "EU"
+	}
 	if bytes.Contains(unpacked, []byte("ULJS")) {
 		return "JP"
 	}
