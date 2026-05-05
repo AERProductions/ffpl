@@ -8,6 +8,7 @@ import { HangarPage } from './pages/HangarPage.jsx'
 import { CalendarPage } from './pages/CalendarPage.jsx'
 import { ProfilePage } from './pages/ProfilePage.jsx'
 import { CommissionerPage } from './pages/CommissionerPage.jsx'
+import { AdminPage } from './pages/AdminPage.jsx'
 
 const router = createHashRouter([
   {
@@ -19,6 +20,7 @@ const router = createHashRouter([
       { path: 'calendar', element: <CalendarPage /> },
       { path: 'profile', element: <ProfilePage /> },
       { path: 'commissioner', element: <CommissionerPage /> },
+      { path: 'admin', element: <AdminPage /> },
     ],
   },
 ])

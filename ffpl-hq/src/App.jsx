@@ -1,4 +1,5 @@
 import { useAuth } from './hooks/useAuth.js';
+import { useAppMode } from './hooks/useAppMode.js';
 import { LoginModal } from './components/LoginModal.jsx';
 import { Ping, ProcessSaveData } from './wailsjs/go/main/App.js';
 import { decryptPspSave } from './lib/psp/decryptSave.js';
@@ -13,6 +14,7 @@ import './index.css';
 
 function App() {
   const { user, isCommissioner, login, logout } = useAuth();
+  const { mode, hasAdminKey } = useAppMode(isCommissioner);
   const [showLogin, setShowLogin] = useState(false);
 
   const [goStatus, setGoStatus] = useState("Checking backend...");
@@ -178,12 +180,15 @@ function App() {
       )}
       <div className="titlebar">
         FFPL // THE ARCH-NEXUS
+        {mode === 'host' && (
+          <span style={{ fontSize: '0.45rem', letterSpacing: '3px', color: 'var(--c-cherry-red)', marginLeft: '0.75rem', border: '1px solid var(--c-cherry-red)', padding: '0.1rem 0.4rem', opacity: 0.9 }}>HOST</span>
+        )}
 
         {/* Auth pill in titlebar */}
         {user ? (
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginLeft: 'auto', marginRight: '0.5rem' }}>
-            <span style={{ fontSize: '0.5rem', letterSpacing: '2px', color: isCommissioner ? 'var(--c-battery-blue)' : 'var(--c-dark-silver)' }}>
-              {isCommissioner ? '◈ COMMISSIONER' : '◇ ARCHITECT'} · {user.email}
+            <span style={{ fontSize: '0.5rem', letterSpacing: '2px', color: mode === 'host' ? 'var(--c-cherry-red)' : isCommissioner ? 'var(--c-battery-blue)' : 'var(--c-dark-silver)' }}>
+              {mode === 'host' ? '⬡ HOST' : isCommissioner ? '◈ COMMISSIONER' : '◇ ARCHITECT'} · {user.email}
             </span>
             <button onClick={logout} style={{ background: 'none', border: 'none', color: 'var(--c-slate-black)', cursor: 'pointer', fontSize: '0.5rem', letterSpacing: '1px', padding: '0 0.3rem' }} title="Sign out">✕</button>
           </div>
@@ -240,8 +245,11 @@ function App() {
             <NavLink to="/hangar" style={({ isActive }) => ({ display: 'block', textDecoration: 'none', ...(isActive ? { borderColor: 'var(--c-ice-blue)', color: 'var(--c-ice-blue)' } : {}) })} className="btn-quantum">HANGAR / ROSTER</NavLink>
             <NavLink to="/calendar" style={({ isActive }) => ({ display: 'block', textDecoration: 'none', ...(isActive ? { borderColor: 'var(--c-ice-blue)', color: 'var(--c-ice-blue)' } : {}) })} className="btn-quantum">CALENDAR</NavLink>
             <NavLink to="/profile" style={({ isActive }) => ({ display: 'block', textDecoration: 'none', ...(isActive ? { borderColor: 'var(--c-ice-blue)', color: 'var(--c-ice-blue)' } : {}) })} className="btn-quantum">MY PROFILE</NavLink>
-            {isCommissioner && (
+            {(isCommissioner || mode === 'host') && (
               <NavLink to="/commissioner" style={({ isActive }) => ({ display: 'block', textDecoration: 'none', ...(isActive ? { borderColor: 'var(--c-ice-blue)', color: 'var(--c-ice-blue)' } : {}) })} className="btn-quantum">COMM. HQ</NavLink>
+            )}
+            {mode === 'host' && (
+              <NavLink to="/admin" style={({ isActive }) => ({ display: 'block', textDecoration: 'none', ...(isActive ? { borderColor: 'var(--c-cherry-red)', color: 'var(--c-cherry-red)' } : { color: 'var(--c-cherry-red)', borderColor: 'rgba(220,38,38,0.4)' }) })} className="btn-quantum">HOST HQ</NavLink>
             )}
           </div>
           
@@ -252,7 +260,7 @@ function App() {
         </section>
 
         {/* CENTER COLUMN: routed page content */}
-        <Outlet context={{ user, isCommissioner }} />
+        <Outlet context={{ user, isCommissioner, mode }} />
 
                 {/* RIGHT COLUMN: TELEMETRY & BANNERS */}
         <section className="glass-panel panel-red" style={{ padding: '0', display: 'flex', flexDirection: 'column' }}>

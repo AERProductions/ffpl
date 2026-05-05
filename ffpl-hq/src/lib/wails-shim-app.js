@@ -14,3 +14,4 @@ export const ExportColorSave    = DESKTOP_ONLY;
 export const TileSpectatorWindows = DESKTOP_ONLY;
 export const CaptureACPreview   = DESKTOP_ONLY;
 export const ParseApolloExport  = DESKTOP_ONLY;
+export const GetAppMode         = () => Promise.resolve({ isDesktop: false, hasAdminKey: false, version: '2.0.26' });

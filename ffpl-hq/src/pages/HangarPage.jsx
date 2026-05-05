@@ -11,7 +11,7 @@ const WEAPON_COLORS = ['BLACK', 'RED', 'YELLOW', 'GREEN', 'BLUE', 'WHITE'];
 const FRAME_COLORS  = ['RED', 'YELLOW', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11'];
 
 export function HangarPage() {
-  const { user, isCommissioner } = useOutletContext();
+  const { user, isCommissioner, mode } = useOutletContext();
   const { loadouts, loading, reload: reloadLoadouts } = useACLoadouts();
 
   const canEditLoadout = (l) => isCommissioner || (user && user.id === l.user_id);
@@ -298,7 +298,7 @@ export function HangarPage() {
         </div>
       </div>
 
-      {isCommissioner && (
+      {(isCommissioner || mode === 'host') && (
       <div style={{ marginTop: '2rem', paddingTop: '1rem', borderTop: '1px solid var(--c-slate-black)' }}>
         <h3 style={{ color: 'var(--c-battery-blue)', fontSize: '0.9rem', marginBottom: '1rem' }}>[ COMMISSIONER ] MATCH OPERATIONS</h3>
         <div style={{ display: 'flex', gap: '1rem', marginBottom: '1rem' }}>

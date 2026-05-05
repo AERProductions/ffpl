@@ -41,3 +41,7 @@ export function TestMatchmaker(arg1, arg2) {
 export function TileSpectatorWindows() {
   return window['go']['main']['App']['TileSpectatorWindows']();
 }
+
+export function GetAppMode() {
+  return window['go']['main']['App']['GetAppMode']();
+}

@@ -229,6 +229,28 @@ func (a *App) resolveWorkspaceRoot() string {
 	return root
 }
 
+// AppModeInfo describes the runtime context of the desktop app.
+// The frontend uses this to gate Host / Commissioner / Architect UI surfaces.
+type AppModeInfo struct {
+	IsDesktop   bool   `json:"isDesktop"`
+	HasAdminKey bool   `json:"hasAdminKey"`
+	Version     string `json:"version"`
+}
+
+// GetAppMode returns the current runtime context so the frontend can select
+// the appropriate UI mode:
+//   - isDesktop  = true  (always in Wails — shim returns false for browser)
+//   - hasAdminKey = true  when FFPL_ADMIN_KEY is set in the environment,
+//     indicating this is the league operator's Host instance.
+func (a *App) GetAppMode() AppModeInfo {
+	_, hasKey := os.LookupEnv("FFPL_ADMIN_KEY")
+	return AppModeInfo{
+		IsDesktop:   true,
+		HasAdminKey: hasKey,
+		Version:     "2.0.26",
+	}
+}
+
 // IsCommissioner checks whether email is in commissioners.json.
 // Returns true if the user should have operator access regardless of their
 // PocketBase role field (useful when the PB admin UI doesn't expose role editing).

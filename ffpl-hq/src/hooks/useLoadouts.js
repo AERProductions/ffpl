@@ -1,5 +1,8 @@
 import { useState, useEffect, useCallback } from 'react';
 import { pb } from '../lib/pb.js';
+import { DEV_LOADOUTS } from '../lib/devFixtures.js';
+
+const IS_DEV = import.meta.env.DEV;
 
 export function useACLoadouts() {
   const [loadouts, setLoadouts] = useState([]);
@@ -23,8 +26,14 @@ export function useACLoadouts() {
       setLoadouts(records.map(r => ({ ...r, pilot: profileMap[r.id] || null })));
       setError(null);
     } catch (err) {
-      if (!err.isAbort) {
-        console.error('Data fetch error:', err);
+      if (err.isAbort) return;
+      console.error('Data fetch error:', err);
+      // In dev mode fall back to static fixtures so UI is testable without PB.
+      if (IS_DEV) {
+        console.warn('[FFPL] PocketBase unreachable — loading dev fixtures');
+        setLoadouts(DEV_LOADOUTS);
+        setError(null);
+      } else {
         setError(err.message);
       }
     } finally {
