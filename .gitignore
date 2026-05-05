@@ -163,6 +163,9 @@ ppsspp/memstick/PSP/SAVEDATA/ULUS10034S003/
 # Re-archive (old conversation logs, not source)
 re_archive/
 
+# Archive dir (research/scan artifacts, old binaries)
+_archive/
+
 # Local dev shortcuts / workspace files
 *.lnk
 *.code-workspace

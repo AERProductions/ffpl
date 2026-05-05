@@ -1,0 +1,25 @@
+{
+  "name": "formula-front-pro-league",
+  "version": "1.0.0",
+  "description": "> **The only automated, ranked competitive circuit for *Armored Core: Formula Front — Extreme Battle* on PSP.**",
+  "main": "index.js",
+  "dependencies": {
+    "sharp": "^0.34.5",
+    "ws": "^8.20.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AERProductions/ffpl.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AERProductions/ffpl/issues"
+  },
+  "homepage": "https://github.com/AERProductions/ffpl#readme"
+}
