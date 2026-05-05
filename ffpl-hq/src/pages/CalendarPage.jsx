@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useOutletContext } from 'react-router-dom';
 import { pb } from '../lib/pb.js';
+import { useACLoadouts } from '../hooks/useLoadouts.js';
+import { BracketSection } from '../components/BracketSection.jsx';
+import { VodSection } from '../components/VodSection.jsx';
 
 const TYPE_COLOR = {
   tournament:  'var(--c-ice-blue)',
@@ -18,8 +21,10 @@ const TYPE_GLYPH = {
 
 export function CalendarPage() {
   const { user, isCommissioner } = useOutletContext();
-  const [events, setEvents]   = useState([]);
-  const [loading, setLoading] = useState(true);
+  const { loadouts } = useACLoadouts();
+  const [events,   setEvents]   = useState([]);
+  const [matches,  setMatches]  = useState([]);
+  const [loading,  setLoading]  = useState(true);
 
   // Create-event form state (commissioner only)
   const [showForm,    setShowForm]    = useState(false);
@@ -50,6 +55,15 @@ export function CalendarPage() {
     fetchEvents();
     pb.collection('events').subscribe('*', fetchEvents);
     return () => pb.collection('events').unsubscribe('*');
+  }, []);
+
+  useEffect(() => {
+    const fetchMatches = () =>
+      pb.collection('matches').getFullList({ sort: '-created', requestKey: null })
+        .then(setMatches).catch(() => {});
+    fetchMatches();
+    pb.collection('matches').subscribe('*', fetchMatches);
+    return () => pb.collection('matches').unsubscribe('*');
   }, []);
 
   async function handleCreateEvent(e) {
@@ -157,6 +171,9 @@ export function CalendarPage() {
           )}
         </div>
       )}
+
+      <BracketSection matches={matches} roster={loadouts} />
+      <VodSection matches={matches} roster={loadouts} />
     </section>
   );
 }

@@ -144,10 +144,22 @@ function App() {
       try {
         res = await ProcessSaveData(base64Data, user?.id ?? '');
       } catch (err) {
-        if (err?.message === 'DESKTOP_ONLY') {
-          throw new Error('Save-file sync requires the FFPL desktop app. Download it from the league site.');
+        if (err?.message !== 'DESKTOP_ONLY') throw err;
+        // Web fallback — POST to the local LAN parse server (:8091).
+        // Works when the player's machine is running the Go server alongside PPSSPP.
+        // Fails gracefully for remote/browser-only users with a clear message.
+        const PARSE_URL = import.meta.env.VITE_PARSE_URL || 'http://localhost:8091/parse-save';
+        const hdrs = { 'Content-Type': 'application/json' };
+        if (import.meta.env.VITE_API_KEY) hdrs['X-FFPL-Key'] = import.meta.env.VITE_API_KEY;
+        let httpResp;
+        try {
+          httpResp = await fetch(PARSE_URL, { method: 'POST', headers: hdrs, body: JSON.stringify({ data: base64Data }) });
+        } catch {
+          throw new Error('Cannot reach parse server — use the desktop app to sync your garage.');
         }
-        throw err;
+        const json = await httpResp.json();
+        if (!httpResp.ok) throw new Error(json.error || `Parse server returned ${httpResp.status}`);
+        res = json.loadouts ?? json;
       }
       setSyncResult({ count: res.length, loadouts: res });
       setSyncError('');

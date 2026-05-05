@@ -9,6 +9,7 @@ export const Ping               = () => Promise.resolve('pong');
 export const IsCommissioner     = () => Promise.resolve(false);
 export const ProcessSaveData    = DESKTOP_ONLY;
 export const AddCommissioner    = DESKTOP_ONLY;
+export const RemoveCommissioner = DESKTOP_ONLY;
 export const TestMatchmaker     = DESKTOP_ONLY;
 export const ExportColorSave    = DESKTOP_ONLY;
 export const TileSpectatorWindows = DESKTOP_ONLY;

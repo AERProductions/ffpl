@@ -1,7 +1,10 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useOutletContext } from 'react-router-dom';
 import { useACLoadouts } from '../hooks/useLoadouts.js';
 import { useChallenges } from '../hooks/useChallenges.js';
+import { pb } from '../lib/pb.js';
+import { AnnouncementsSection } from '../components/AnnouncementsSection.jsx';
+import { ProfileModal } from '../components/ProfileModal.jsx';
 
 const MODE_COLOR = {
   open:      '#4caf50',
@@ -15,7 +18,9 @@ export function LeaderboardPage() {
   const { user } = useOutletContext();
   const { loadouts, loading } = useACLoadouts();
   const [challengeError, setChallengeError] = useState('');
-  const [sendingTo, setSendingTo] = useState(null); // loadout ID currently being challenged
+  const [sendingTo, setSendingTo] = useState(null);
+  const [announcements, setAnnouncements] = useState([]);
+  const [profileModal, setProfileModal] = useState(null); // { acName, existingProfile }
 
   // Build ranked rows: exclude banned ACs and those in closed mode.
   // Sort primary: score desc, secondary: rating desc, tertiary: wins desc.
@@ -38,6 +43,15 @@ export function LeaderboardPage() {
   const myLoadoutIds  = myLoadouts.map(l => l.id);
 
   const { outgoing, incoming, sendChallenge, respondToChallenge } = useChallenges(myLoadoutIds);
+
+  useEffect(() => {
+    const fetch = () =>
+      pb.collection('announcements').getFullList({ sort: '-created', requestKey: null })
+        .then(setAnnouncements).catch(() => {});
+    fetch();
+    pb.collection('announcements').subscribe('*', fetch);
+    return () => pb.collection('announcements').unsubscribe('*');
+  }, []);
 
   // Find my best eligible challenger for a given defender rank index.
   // "eligible" = lower-ranked (higher idx) than the defender.
@@ -125,7 +139,15 @@ export function LeaderboardPage() {
                 <span style={cellStyle(2, rankColor(idx))}>
                   {idx === 0 ? '◈' : idx === 1 ? '◇' : idx === 2 ? '△' : `${idx + 1}`}
                 </span>
-                <span style={cellStyle(6, 'var(--c-white)')} title={handle}>{truncate(handle, 14)}</span>
+                <span style={cellStyle(6, 'var(--c-white)')} title={handle}>
+                  <button
+                    onClick={() => setProfileModal({ acName: l.ac_name, existingProfile: l.pilot || null })}
+                    style={{ background: 'none', border: 'none', color: 'inherit', font: 'inherit', cursor: 'pointer', padding: 0, letterSpacing: 'inherit', textDecoration: 'underline dotted', textUnderlineOffset: '3px' }}
+                    title="View pilot profile"
+                  >
+                    {truncate(handle, 14)}
+                  </button>
+                </span>
                 <span style={cellStyle(5, 'var(--c-dark-silver)')} title={l.ac_name}>{truncate(l.ac_name || l.profile || '—', 12)}</span>
                 <span style={cellStyle(3, 'var(--c-battery-blue)')}>{truncate((l.team || 'ULGND').toUpperCase(), 8)}</span>
                 <span style={cellStyle(2, '#4caf50', 'center')}>{l.wins ?? 0}</span>
@@ -225,6 +247,18 @@ export function LeaderboardPage() {
       <div style={{ marginTop: '0.75rem', paddingTop: '0.5rem', borderTop: '1px solid var(--c-slate-black)', fontSize: '0.45rem', color: 'var(--c-slate-black)', letterSpacing: '1px' }}>
         CLOSED pilots hidden · VACATION pilots visible but not challengeable · Rating = Glicko-2 (±RD)
       </div>
+
+      <AnnouncementsSection announcements={announcements} />
+
+      {profileModal && (
+        <ProfileModal
+          acName={profileModal.acName}
+          mode={profileModal.existingProfile ? 'view' : 'create'}
+          existingProfile={profileModal.existingProfile}
+          onClose={() => setProfileModal(null)}
+          onSave={() => setProfileModal(null)}
+        />
+      )}
     </section>
   );
 }
