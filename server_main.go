@@ -1,4 +1,4 @@
-//go:build !wails && !wailsbindings
+//go:build !wails && !bindings
 
 package main
 
