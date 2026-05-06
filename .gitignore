@@ -169,3 +169,19 @@ _archive/
 # Local dev shortcuts / workspace files
 *.lnk
 *.code-workspace
+
+# Internal planning documents
+planbackup.markdown
+
+# Game-extracted image assets (copyright — not for public distribution)
+radar_imgs/
+
+# Standalone server entry point (calls private startParseServer() from server.go)
+server_main.go
+
+# Research / offset documentation (not public — others can RE on their own)
+/data/
+
+# Compiled frontend build output (generated artifact, not source)
+ffpl-hq/dist-web/
+ffpl-hq/dist/

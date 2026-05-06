@@ -1161,31 +1161,31 @@
     "name": "O03-CODON"
   },
   "387": {
-    "name": "CR-O83ES"
+    "name": "WL15L-GRIFFON"
   },
   "388": {
-    "name": "O07-PRIMER"
+    "name": ""
   },
   "389": {
-    "name": "O04-GOLGI"
+    "name": ""
   },
   "390": {
-    "name": "O05-HISTON"
+    "name": ""
   },
   "391": {
-    "name": "O06-PHAGE"
+    "name": "KATEN"
   },
   "392": {
-    "name": "O08-RIBOSE"
+    "name": "SUITEN"
   },
   "393": {
-    "name": "CR-O86R"
+    "name": "JITEN"
   },
   "394": {
-    "name": "CR-O94ESS"
+    "name": ""
   },
   "395": {
-    "name": "CR-O94ESS"
+    "name": ""
   },
   "396": {
     "name": ""
@@ -1230,31 +1230,31 @@
     "name": ""
   },
   "410": {
-    "name": ""
+    "name": "O01-AMINO"
   },
   "411": {
-    "name": ""
+    "name": "CR-O69ES"
   },
   "412": {
-    "name": ""
+    "name": "CR-O69SS"
   },
   "413": {
-    "name": ""
+    "name": "CR-O71EC"
   },
   "414": {
     "name": ""
   },
   "415": {
-    "name": ""
+    "name": "CR-O79L+"
   },
   "416": {
-    "name": ""
+    "name": "O02-ORGANELLE"
   },
   "417": {
-    "name": ""
+    "name": "O03-CODON"
   },
   "418": {
-    "name": ""
+    "name": "CR-O83ES+"
   },
   "419": {
     "name": ""
@@ -1275,12 +1275,12 @@
     "name": ""
   },
   "425": {
-    "name": ""
+    "name": "KANGI"
   },
   "426": {
     "name": ""
   },
   "427": {
-    "name": ""
+    "name": "KANGI"
   }
 }
